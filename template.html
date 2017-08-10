@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Challenge</title>
+      <link href="https://fonts.googleapis.com/css?family=Nixie+One|Poiret+One|Quicksand" rel="stylesheet">
+    <style>
+.button {
+    background-color: #33ccff; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+ 		     <script src="script.js"></script>
+		     <link rel="stylesheet" href="style.css">
+    </head>
+    <body background=yellow>
+      <button class="button" style="vertical-align:middle"onclick="myFunction()"><span>Change color </span></button>
+    <script>
+    function myFunction()
+    {
+    document.body.style.backgroundColor= randomColor();
+    }
+    function randomColor() {
+      return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+   </script>
+
+
+		 <center> <h1 style="font-family: 'Nixie One', cursive;color:black">Hello World!</h1>
+      <p style="font-family: 'Quicksand', sans-serif;color:black">We the People of the United States, in Order to form a more perfect Union, establish Justice,<br>
+         insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+     </center>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/xDmBtNrC5Lc" frameborder="0" allowfullscreen></iframe>
+
+    </body>
+</html>
